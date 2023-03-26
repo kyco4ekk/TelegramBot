@@ -9,6 +9,6 @@ namespace TelegramBot.DataBase
 {
     class DataConfig
     {
-        public static readonly string connection = "server=localhost;port=3306;username=root;password=root;database=proger;SSL Mode=None";
+        public static readonly string connection = "server="";port="";username="";password="";database="";SSL Mode=None";
     }
 }
