@@ -79,4 +79,5 @@ https://openweathermap.org/api
 
 
 /на данный момент бот не задеплоен
-ссылка на бота: https://t.me/Ko4eBHuk_Bot
+
+| ссылка на бота: https://t.me/Ko4eBHuk_Bot |
