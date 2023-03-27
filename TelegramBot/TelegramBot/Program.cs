@@ -8,6 +8,17 @@ namespace TelegramBot.Commands
 {
     class Program
     {
+        private const string firstMessage = "Доступный список команд\n" +
+            "1.1 /fa\n" +
+            "1.2 /stop_fa\n" +
+            "1.3 /fa_results\n" +
+            "2.1 /city\n" +
+            "2.2 /stopCityGame\n" +
+            "3 /weather [указать город]*\n" +
+            "*[ ] - означает, что внутри скобок нужно указать требуемый запрос\n(скобки прописывать не нужно)\n" +
+            "4 /m [указать пример формата:\n(ax + by)^n]\n" +
+            "5 /game\n";
+        
         private static TelegramBotClient client;
         private static List<Commands> commands;
         private static DB db;
@@ -53,7 +64,8 @@ namespace TelegramBot.Commands
             {               
                 if(message.Text == "еее кочевники")
                     await client.SendTextMessageAsync(message.Chat.Id, "еее\U0001F918");
-
+                if (message.Text == "/start")
+                    await client.SendTextMessageAsync(message.Chat.Id, $"{firstMessage}");
                 try
                 {
                     db.Connection(e);
