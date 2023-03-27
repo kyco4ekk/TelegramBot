@@ -16,7 +16,7 @@ namespace TelegramBot.Commands
             "2.2 /stopCityGame\n" +
             "3 /weather [указать город]*\n" +
             "*[ ] - означает, что внутри скобок нужно указать требуемый запрос\n(скобки прописывать не нужно)\n" +
-            "4 /m [указать пример формата:\n(ax + by)^n]\n" +
+            "4 /m [указать пример формата:\n(ax+by)^n]\n" +
             "5 /game\n";
         
         private static TelegramBotClient client;
